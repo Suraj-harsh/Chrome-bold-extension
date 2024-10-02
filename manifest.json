@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Bold Half of Word",
+  "version": "1.0",
+  "description": "Makes half of each word bold on the webpage.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
